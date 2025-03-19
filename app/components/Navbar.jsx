@@ -20,25 +20,19 @@ const Navbar = () => {
         </a>
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
           <li>
-            <a className="font-ovo" href="#top">Home</a>
+            <a className="font-ovo" href="#top">Projects</a>
           </li>
           <li>
-            <a className="font-ovo" href="#top">About Us</a>
+            <a className="font-ovo" href="#top">Studio</a>
           </li>
           <li>
-            <a className="font-ovo" href="#top">Our Services</a>
-          </li>
-          <li>
-            <a className="font-ovo" href="#top">Our Projects</a>
-          </li>
-          <li>
-            <a className="font-ovo" href="#top">Contact Us</a>
+            <a className="font-ovo" href="#top">News</a>
           </li>
         </ul>
         <div className="flex items-center gap-4">
-            <button>
+            {/* <button>
                 <Image src={assets.moon_icon} alt='' className="w-6"/>
-            </button>
+            </button> */}
           <a href="#contact" className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo">
             contact
             <Image src={assets.arrow_icon} alt='' className='w-3'/>
@@ -56,20 +50,22 @@ const Navbar = () => {
         }
 
         {/* mobile menu */}
-        <ul className={`fixed top-0 bottom-0 right-0 w-64 z-50 h-screen text-right bg-[#000] text-[#fff] hover:text-aGreen flex flex-col gap-4 py-20 px-10 transition-transform duration-500 font-normal text-[52px] leading-[58px]
+        <ul className={`fixed top-0 bottom-0 right-0 w-64 z-50 h-screen bg-[#000] text-[#fff] flex flex-col gap-4 py-20 px-10 transition-transform duration-500 font-normal text-[52px] leading-[58px]
                     ${menuOpen ? "translate-x-0" : "translate-x-full"}`}>
-            <div className="absolute right-6 top-6" onClick={closeMenu}>
-                <Image src={assets.close_black} alt='' className="w-5 cursor-pointer"/>
+            <div className="top-4 flex justify-end" onClick={closeMenu}>
+                <Image src={assets.close_white} alt='' className="w-8 cursor-pointer"/>
             </div>
-          <li>
-            <a className="font-ovo hover:text-aGreen" href="#top" onClick={closeMenu}>Projects</a>
+            <div className="">
+          <li className="flex justify-end">
+            <a className="font-ovo hover:text-aGreen inline-block" href="#top" onClick={closeMenu}>PROJECTS</a>
           </li>
-          <li>
-            <a className="font-ovo hover:text-aGreen" href="#top" onClick={closeMenu}>Studio</a>
+          <li className="flex justify-end"> 
+            <a className="font-ovo hover:text-aGreen inline-block" href="#top" onClick={closeMenu}>STUDIO</a>
           </li>
-          <li>
-            <a className="font-ovo hover:text-aGreen" href="#top" onClick={closeMenu}>News</a>
+          <li className="flex justify-end">
+            <a className="font-ovo hover:text-aGreen inline-block" href="#top" onClick={closeMenu}>NEWS</a>
           </li>
+          </div>
         </ul>
 
 
