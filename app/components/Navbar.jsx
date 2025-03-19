@@ -1,18 +1,13 @@
 import Image from "next/image";
 import { assets } from "../assets/assets";
-import { useRef } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
 
-    const sideMenuRef = useRef()
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    const openMenu = () => {
-        sideMenuRef.current.style.transform = 'translateX(-16rem)'
-    }
-
-    const closeMenu = () => {
-        sideMenuRef.current.style.transform = 'translateX(16rem)'
-    }
+    const openMenu = () => setMenuOpen(true);
+    const closeMenu = () => setMenuOpen(false);
 
   return (
     <>
@@ -53,25 +48,27 @@ const Navbar = () => {
             </button>
         </div>
 
+        {
+          menuOpen && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-500"
+                        onClick={closeMenu}/>
+          )
+        }
+
         {/* mobile menu */}
-        <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-alGreen transition duration-500">
+        <ul className={`fixed top-0 bottom-0 right-0 w-64 z-50 h-screen text-right bg-[#000] text-[#fff] hover:text-aGreen flex flex-col gap-4 py-20 px-10 transition-transform duration-500 font-normal text-[52px] leading-[58px]
+                    ${menuOpen ? "translate-x-0" : "translate-x-full"}`}>
             <div className="absolute right-6 top-6" onClick={closeMenu}>
                 <Image src={assets.close_black} alt='' className="w-5 cursor-pointer"/>
             </div>
           <li>
-            <a className="font-ovo" href="#top" onClick={closeMenu}>Home</a>
+            <a className="font-ovo hover:text-aGreen" href="#top" onClick={closeMenu}>Projects</a>
           </li>
           <li>
-            <a className="font-ovo" href="#top" onClick={closeMenu}>About Us</a>
+            <a className="font-ovo hover:text-aGreen" href="#top" onClick={closeMenu}>Studio</a>
           </li>
           <li>
-            <a className="font-ovo" href="#top" onClick={closeMenu}>Our Services</a>
-          </li>
-          <li>
-            <a className="font-ovo" href="#top" onClick={closeMenu}>Our Projects</a>
-          </li>
-          <li>
-            <a className="font-ovo" href="#top" onClick={closeMenu}>Contact Us</a>
+            <a className="font-ovo hover:text-aGreen" href="#top" onClick={closeMenu}>News</a>
           </li>
         </ul>
 
