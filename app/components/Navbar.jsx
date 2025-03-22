@@ -60,7 +60,7 @@ const Navbar = () => {
             <a className="font-ovo hover:text-aGreen inline-block" href="#top" onClick={closeMenu}>PROJECTS</a>
           </li>
           <li className="flex justify-end"> 
-            <a className="font-ovo hover:text-aGreen inline-block" href="#top" onClick={closeMenu}>STUDIO</a>
+            <a className="font-ovo hover:text-aGreen inline-block" href="#top" onClick={closeMenu}>STUDY</a>
           </li>
           <li className="flex justify-end">
             <a className="font-ovo hover:text-aGreen inline-block" href="#top" onClick={closeMenu}>NEWS</a>
