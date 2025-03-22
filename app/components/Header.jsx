@@ -6,7 +6,7 @@ import { assets } from "../assets/assets";
 const Header = () => {
   return (
     <div className='w-full h-screen relative'>
-        <Image src={assets.bg} alt='' layout='fill' objectFit='cover' />
+        <Image src={assets.bg} alt='' layout='fill' objectFit='cover' quality={100} priority />
         {/* <Container className='relative z-10 flex flex-col justify-between h-full text-white'>
         </Container> */}
     </div>
