@@ -1,20 +1,34 @@
 import Image from "next/image";
 import { assets } from "../assets/assets";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const openMenu = () => setMenuOpen(true);
     const closeMenu = () => setMenuOpen(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 50) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
   return (
     <>
     <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <Image src={assets.header_bg_color} alt='' className='w-full'/>
     </div>
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+      <nav className={`fixed w-full px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"} md:bg-transparent`}>
         <a href="#top" className='w-28 cursor-pointer mr-14'>
           <Image src={assets.logobg} alt="logo" className='w-28 cursor-pointer mr-14'/>
         </a>
