@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="bg-white text-black flex flex-col md:flex-row px-6 pt-12 pb-8">
+      <div className="bg-white text-black flex flex-col md:flex-row px-6 pt-12 pb-8 lg:flex-row">
         <span className=" text-[16px]">STUDIO INFO</span>
         <div className="text-md pt-4">
             <span className="block">Artemis Atelier ltd</span>
