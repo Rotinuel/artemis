@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <div className='relative w-full h-screen overflow-hidden flex items-center justify-center'>
+    <div className='relative w-full h-screen overflow-hidden flex items-center justify-center z-1'>
         <video id="background-video" className="w-auto h-screen min-w-full min-h-full max-w-none object-cover" src={videos[currentVideo]} autoPlay loop={false} muted playsInline/>
       </div>
   )

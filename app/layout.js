@@ -1,5 +1,7 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar.jsx";
+
 
 
 const outfit = Outfit({
@@ -21,6 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
        <body className={`${outfit.className} ${ovo.className} antialiased`}>
+        <Navbar />
         {children}
       </body>
     </html>
