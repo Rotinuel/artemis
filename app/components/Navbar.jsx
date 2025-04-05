@@ -10,7 +10,11 @@ const Navbar = () => {
   const openMenu = () => setMenuOpen(true);
   const closeMenu = () => setMenuOpen(false);
 
-  const menuItems = ["PROJECTS", "STUDIO", "NEWS"];
+  const menuItems = [
+    { name: "PROJECTS", href:"/products"},
+    { name: "STUDIO", href:"/studio"},
+    { name: "NEWS", href:"/news"}
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +44,7 @@ const Navbar = () => {
           isScrolled ? "bg-white shadow-md" : "bg-transparent"
         } md:bg-transparent`}
       >
-        <a href="#top" className="w-28 cursor-pointer mr-14">
+        <a href="/" className="w-28 cursor-pointer mr-14">
           <Image
             src={assets.logobg}
             alt="logo"
@@ -52,9 +56,9 @@ const Navbar = () => {
             <li key={index} className="relative group">
               <a
                 className="flex justify-end hover:text-aGreen relative z-10"
-                href="#top"
+                href={item.href}
               >
-                {item}
+                {item.name}
               </a>
             </li>
           ))}
@@ -86,10 +90,10 @@ const Navbar = () => {
               <li key={index} className="flex justify-end">
               <a
                 className="hover:text-aGreen block"
-                href="#top"
+                href={item.href}
                 onClick={closeMenu}
               >
-                {item}
+                {item.name}
               </a>
             </li>
             ))}

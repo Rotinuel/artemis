@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
     <div className="space-y-2">
-      <div className="bg-white text-black flex flex-col justify-evenly px-6 pt-12 pb-8 lg:flex-row lg:p-4">
+      <div className="bg-white text-black grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  justify-evenly px-6 pt-12 pb-8 lg:flex-row lg:p-4">
         <span className="hidden lg:block lg:p-6">Artemis Atelier ltd</span>
         <div className="text-md pt-10 lg:p-6">
             <span className=" text-[16px] pb-4">STUDIO INFO</span>
@@ -19,6 +19,8 @@ const Footer = () => {
             <span className="block pt-4"><button className="underline" download>Download the vCard</button></span>
             <span className="block">or <button className="underline">Scan QR-Code</button></span>
         </div>
+        
+        <div className="">
         <div className="text-md pt-10 lg:p-6">
             <span className="block">PRESS AREA</span>
             <span className="pt-4 block">studio(at)artemisatelierltd.co</span>
@@ -26,6 +28,7 @@ const Footer = () => {
         <div className="text-md pt-10 lg:p-6">
             <span className="block">JOBS APPLICATION</span>
             <span className="pt-4 block">jobs(at)artemisatelierltd.co</span>
+        </div>
         </div>
         <div className="text-md pt-10 lg:p-6">
             <span>BE mono UPTODATE</span>
@@ -39,7 +42,7 @@ const Footer = () => {
             </div>    
         </div>
       </div>
-      <div className="pb-8 pt-4 text-aGreen text-center leading-[20px] text-[16px] font-normal font-trebuchet">
+      <div className="pb-8 pt-4 text-aGreen lg:text-center leading-[20px] text-[16px] font-normal font-trebuchet md:text-left pl-6 lg:pl-12">
         <span>&copy; Artemis Atelier 2025. All rights reserved</span>
       </div>
     </div>
