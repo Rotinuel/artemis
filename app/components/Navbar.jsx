@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { assets } from "../assets/assets";
 import { useEffect, useState } from "react";
-
+import Link from "next/link";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,34 +32,34 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+      {/* <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <Image
           src={assets.header_bg_color}
           alt="background"
           className="w-full h-full object-cover"
         />
-      </div>
+      </div> */}
       <nav
         className={`fixed w-full px-5 lg:pr-0.5 xl:px-[8%] py-2 flex items-right justify-between z-[100] ${
           isScrolled ? "bg-white shadow-md" : "bg-transparent"
         } md:bg-transparent`}
       >
-        <a href="/" className="w-28 cursor-pointer mr-14">
+        <Link href="/" className="w-28 cursor-pointer mr-14">
           <Image
             src={assets.logobg}
             alt="logo"
             className="w-14 lg:w-28 cursor-pointer"
           />
-        </a>
+        </Link>
         <ul className="hidden flex-col lg:flex gap-4 lg:gap-2 px-2 py-12 justify-end font-normal text-[52px] leading-[50px] text-white font-trebuchet">
           {menuItems.map((item, index) => (
             <li key={index} className="relative group">
-              <a
+              <Link
                 className="flex justify-end hover:text-aGreen relative z-10"
                 href={item.href}
               >
                 {item.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -88,13 +88,13 @@ const Navbar = () => {
           <div className="font-trebuchet">
             {menuItems.map((item, index) => (
               <li key={index} className="flex justify-end">
-              <a
+              <Link
                 className="hover:text-aGreen block"
                 href={item.href}
                 onClick={closeMenu}
               >
                 {item.name}
-              </a>
+              </Link>
             </li>
             ))}
           </div>
