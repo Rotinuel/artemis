@@ -12,8 +12,8 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "PROJECTS", href:"/products"},
-    { name: "STUDIO", href:"/studio"},
-    { name: "NEWS", href:"/news"}
+    { name: "STUDIO", href:"/studio"}
+    // { name: "NEWS", href:"/news"}
   ];
 
   useEffect(() => {

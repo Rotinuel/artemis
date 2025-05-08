@@ -4,15 +4,15 @@ import Image from "next/image";
 
 const products = () => {
   const productsLinks = [
-    { name: "hotel-restaurant //", href: "/" },
-    { name: "living //", href: "/" },
-    { name: "residential complexes //", href: "/" },
-    { name: "headquarters //", href: "/" },
-    { name: "retail //", href: "/" },
-    { name: "healthcare //", href: "/" },
-    { name: "exhibition stands //", href: "/" },
-    { name: "infrastructure - public spaces //", href: "/" },
-    { name: "urbanism //", href: "/" },
+    { name: "hotel-restaurant //", href: "/products" },
+    { name: "living //", href: "/products" },
+    { name: "residential complexes //", href: "/products" },
+    { name: "headquarters //", href: "/products" },
+    { name: "retail //", href: "/products" },
+    { name: "healthcare //", href: "/products" },
+    { name: "exhibition stands //", href: "/products" },
+    { name: "infrastructure - public spaces //", href: "/products" },
+    { name: "urbanism //", href: "/products" },
   ];
 
   const cards = [
