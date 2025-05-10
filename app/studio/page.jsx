@@ -11,10 +11,6 @@ const Studio = () => {
   return (
     <div className="scroll-smooth bg-black text-white font-trebuchet">
       <aside className="w-full md:w-1/4 lg:fixed top-0 left-0 pt-28 hidden lg:block z-10">
-        {/* <ul className="flex space-x-6 justify-left">
-
-        </ul> */}
-
         <ul className="space-y-4 text-[24px] font-bold leading-[30px] flex-wrap gap-4 font-trebuchet text-white">
           {aboutLinks.map((item, index) => (
             <li key={index}>

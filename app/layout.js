@@ -1,18 +1,17 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
-
+import ClientLayout from "./components/ClientLayout";
+import CustomCursor from "./components/CustomCursor";
 
 
 const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"]
+  weight: ["400", "500", "600", "700"],
 });
 
 const ovo = Ovo({
   subsets: ["latin"],
-  weight: ["400"]
+  weight: ["400"],
 });
 
 export const metadata = {
@@ -21,12 +20,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
-       <body className={`${outfit.className} ${ovo.className} antialiased`}>
-        <Navbar />
+      <body className={`${outfit.className} ${ovo.className} antialiased`}>
+        <CustomCursor />
+        <ClientLayout>
         {children}
-        <Footer />
+        </ClientLayout>
       </body>
     </html>
   );

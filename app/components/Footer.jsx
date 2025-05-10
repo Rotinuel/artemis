@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="flex flex-row space-x-4 text-xl text-black pt-4 ">
               <a href="https://www.archilovers.com" target="blank" rel="noopener noreferrer" className="hover:text-aGreen"><FaAmilia /></a>
               <a href="https://www.youtube.com" target="blank" rel="noopener noreferrer" className="hover:text-aGreen"><FaYoutube /></a>
-              <a href="https://www.linkedin.com" target="blank" rel="noopener noreferrer" className="hover:text-aGreen"><FaLinkedinIn /></a>
+              <a href="https://www.linkedin.com/company/artemis-atelier-limited" target="blank" rel="noopener noreferrer" className="hover:text-aGreen"><FaLinkedinIn /></a>
               <a href="https://www.instagram.com" target="blank" rel="noopener noreferrer" className="hover:text-aGreen"><FaInstagram /></a>
               <a href="https://www.facebook.com" target="blank" rel="noopener noreferrer" className="hover:text-aGreen"><FaFacebook /></a>
 
