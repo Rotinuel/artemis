@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         </div>
         <div className="text-md pt-10 lg:p-6">
-            <span>BE mono UPTODATE</span>
+            <span>BE UP TO DATE</span>
             <div className="flex flex-row space-x-4 text-xl text-black pt-4 ">
               <a href="https://www.archilovers.com" target="blank" rel="noopener noreferrer" className="hover:text-aGreen"><FaAmilia /></a>
               <a href="https://www.youtube.com" target="blank" rel="noopener noreferrer" className="hover:text-aGreen"><FaYoutube /></a>
