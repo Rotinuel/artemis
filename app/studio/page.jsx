@@ -9,24 +9,23 @@ const Studio = () => {
   ];
 
   return (
-    <div className="scroll-smooth bg-black text-white font-trebuchet">
-      <aside className="w-full md:w-1/4 lg:fixed top-0 left-0 pt-28 hidden lg:block z-10">
-        <ul className="space-y-4 text-[24px] font-bold leading-[30px] flex-wrap gap-4 font-trebuchet text-white">
+    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-72 left-2">
+        <ul className="hidden lg:flex flex-wrap gap-4 font-trebuchet lg:px-16 text-xl">
           {aboutLinks.map((item, index) => (
             <li key={index}>
-              <Link href={item.href} className="hover:text-aGreen text-white">
+              <Link href={item.href} className="hover:text-aGreen text-black block">
                 {item.name}
               </Link>
             </li>
           ))}
         </ul>
-      </aside>
+      
 
-      <main className="lg:ml-[25%] px-8 pt-40">
+      <main className="lg:mx-[2%] px-8">
         {/* STUDIO SECTION */}
-        <section id="studio" className="min-h-screen pt-6 pb-12">
+        <section id="studio" className="py-16 scroll-mt-32">
           <h1 className="text-[52px] font-bold mb-6">STUDIO</h1>
-          <p className="text-[20px] leading-[30px] max-w-3xl text-justify">
+          <p className="text-[20px] leading-[30px] max-w-7.5xl text-justify">
             Artemis Atelier Limited is one of Nigeria's leading architectural
             and construction companies, headquartered in Lagos. Established by
             Mr. C. E. Makama, the company was founded with a clear vision: to
@@ -48,19 +47,20 @@ const Studio = () => {
           </p>
         </section>
 
-        <section id="team" className="min-h-screen pt-6 pb-12">
+        <section id="team" className="py-16 scroll-mt-32">
           <h1 className="text-[52px] font-bold mb-6">OUR TEAM</h1>
-          <p className="text-[20px] leading-[30px] max-w-3xl text-justify">
+          <p className="text-[20px] leading-[30px] max-w-7.5xl text-justify">
             Our team is made up of talented and experienced professionals who
             are dedicated to delivering high-quality designs that meet the needs
             of our clients. We work collaboratively to ensure that every project
             is a success.
+            
           </p>
         </section>
 
-        <section id="client" className="min-h-screen pt-6 pb-6">
+        <section id="client" className="py-16 scroll-mt-32">
           <h1 className="text-[52px] font-bold mb-6">CLIENTS</h1>
-          <p className="text-[20px] leading-[30px] max-w-3xl text-justify">
+          <p className="text-[20px] leading-[30px] max-w-7.5xl text-justify">
             We’ve had the privilege of working with clients across various
             industries, building long-term relationships based on trust and
             excellence.

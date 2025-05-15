@@ -3,9 +3,13 @@ import Image from "next/image";
 import { assets } from "../assets/assets";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
+  const isHomePage = pathname === "/";
 
   const openMenu = () => setMenuOpen(true);
   const closeMenu = () => setMenuOpen(false);
@@ -41,8 +45,10 @@ const Navbar = () => {
       </div> */}
       <nav
         className={`fixed w-full px-5 lg:pr-0.5 xl:px-[8%] py-2 flex items-right justify-between z-[100] ${
-          isScrolled ? "bg-white shadow-md" : "bg-transparent"
-        } md:bg-transparent`}
+          isHomePage ?
+          isScrolled ? "bg-transparent shadow-md" : "bg-transparent" :
+          "bg-white"
+        } ${!isHomePage && isScrolled ? "shadow-md" : ""}`} 
       >
         <Link href="/" className="w-28 cursor-pointer mr-14">
           <Image
@@ -51,7 +57,7 @@ const Navbar = () => {
             className="w-14 lg:w-28 cursor-pointer"
           />
         </Link>
-        <ul className="hidden flex-col lg:flex gap-4 lg:gap-2 px-2 py-12 justify-end font-normal text-[52px] leading-[50px] text-white font-trebuchet">
+        <ul className="hidden flex-col lg:flex gap-4 lg:gap-2 px-2 py-12 justify-end font-normal text-[52px] leading-[50px] text-black font-trebuchet">
           {menuItems.map((item, index) => (
             <li key={index} className="relative group">
               <Link

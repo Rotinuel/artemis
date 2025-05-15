@@ -57,10 +57,10 @@ const products = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-black min-h-screen text-white relative z-[1] p-12 font-trebuchet pt-52">
+    <div className="w-full overflow-hidden bg-white min-h-screen text-black relative z-[1] p-12 font-trebuchet pt-52">
       <Link
         href="/"
-        className="block mb-4 text-xl font-bold hover:text-aGreen"
+        className="block mb-4 text-xl font-bold hover:text-aGreen pt-2"
       >
         all
       </Link>
@@ -76,7 +76,7 @@ const products = () => {
           </li>
         ))}
       </ul>
-      <div className="py-2">
+      {/* <div className="py-2">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card, index) => (
             <div
@@ -96,12 +96,40 @@ const products = () => {
               </div>
               <div className="p-6">
                 <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
-                <p className="text-white">{card.description}</p>
+                <p className="text-black">{card.description}</p>
               </div>
             </div>
           ))}
         </div>
+      </div> */}
+
+<div className="py-2">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {cards.map((card, index) => (
+      <div
+        key={index}
+        className="group rounded-2xl bg-white shadow-md p-6 transition-all duration-300 transform hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1 text-black overflow-hidden"
+      >
+        <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 overflow-hidden rounded-xl">
+          {card.image && (
+            <Image
+              src={card.image}
+              alt={card.title}
+              fill
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          )}
+        </div>
+        <div className="p-6">
+          <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
+          <p>{card.description}</p>
+        </div>
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 };

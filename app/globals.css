@@ -12,4 +12,8 @@
   --font-trebuchet: Trebuchet MS, sans-serif;
 }
 
+html{
+  scroll-padding-top: 128px;
+}
+
 
