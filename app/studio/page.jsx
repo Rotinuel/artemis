@@ -44,7 +44,7 @@ const Studio = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-12 lg:pt-48 left-4" style={{ backgroundImage: 'url(/studio_bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-12 lg:pt-20 left-2" style={{ backgroundImage: 'url(/studio_bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <ul className="hidden lg:flex flex-wrap gap-4 font-trebuchet lg:px-24 text-xl">
         {aboutLinks.map((item, index) => (
           <li key={index}>
@@ -95,7 +95,7 @@ const Studio = () => {
             </div>
         </section>
 
-        <section className="py-16 scroll-mt-24 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-2">
+        <section className="py-16 scroll-mt-4 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-2">
           {/* <h1 className="text-[52px] font-bold mb-6 text-aGreen text-left">FAMOUS ARCHITECTS</h1> */}
           <Carousel
             showArrows={true}
@@ -107,12 +107,12 @@ const Studio = () => {
             className="max-w-3xl mx-auto"
           >
             {architectQuotes.map((item, index) => (
-              <div key={index} className="px-6 py-5 text-center">
+              <div key={index} className="px-6 py-2 text-center">
                 <Image
                   src={item.image}
                   alt={item.name}
-                  width={120}
-                  height={120}
+                  width={60}
+                  height={60}
                   className="mx-auto rounded-full object-cover mb-2"
                 />
                 <p className="text-lg italic mb-2">"{item.quote}"</p>
@@ -122,7 +122,7 @@ const Studio = () => {
           </Carousel>
         </section>
 
-        <section id="team" className="py-16 scroll-mt-32 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-8 mb-8">
+        <section id="team" className="py-8 scroll-mt-32 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-8 mb-8">
           <h1 className="text-[52px] font-bold mb-6 text-aGreen">OUR TEAM</h1>
           <p className="text-[20px] leading-[30px] max-w-7.5xl text-justify">
             Our team is made up of talented and experienced professionals who
