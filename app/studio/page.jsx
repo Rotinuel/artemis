@@ -121,7 +121,7 @@ const Studio = () => {
           </Carousel>
         </section>
 
-        <section id="team" className="py-16 scroll-mt-32 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-12">
+        <section id="team" className="py-16 scroll-mt-32 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-8 mb-8">
           <h1 className="text-[52px] font-bold mb-6 text-aGreen">OUR TEAM</h1>
           <p className="text-[20px] leading-[30px] max-w-7.5xl text-justify">
             Our team is made up of talented and experienced professionals who
@@ -169,14 +169,14 @@ const Studio = () => {
           </div> */}
         </section>
 
-        <section id="client" className="py-16 scroll-mt-32 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-12 mb-8">
+        {/* <section id="client" className="py-16 scroll-mt-32 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-12 mb-8">
           <h1 className="text-[52px] font-bold mb-6 text-aGreen">CLIENTS</h1>
           <p className="text-[20px] leading-[30px] max-w-7.5xl text-justify">
             We’ve had the privilege of working with clients across various
             industries, building long-term relationships based on trust and
             excellence.
           </p>
-        </section>
+        </section> */}
       </main>
     </div>
   );
