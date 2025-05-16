@@ -44,7 +44,7 @@ const Studio = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-12 lg:pt-20 left-2" style={{ backgroundImage: 'url(/studio_bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-8 lg:pt-20" style={{ backgroundImage: 'url(/studio_bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <ul className="hidden lg:flex flex-wrap gap-4 font-trebuchet lg:px-24 text-xl">
         {aboutLinks.map((item, index) => (
           <li key={index}>
