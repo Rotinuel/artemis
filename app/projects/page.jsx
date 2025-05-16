@@ -57,7 +57,7 @@ const products = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-white min-h-screen text-black relative z-[1] p-12 font-trebuchet pt-52">
+    <div className="w-full overflow-hidden bg-white min-h-screen text-black relative z-[1] p-12 font-trebuchet pt-24">
       <Link
         href="/"
         className="block mb-4 text-xl font-bold hover:text-aGreen pt-2"

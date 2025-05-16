@@ -15,7 +15,7 @@ const Navbar = () => {
   const closeMenu = () => setMenuOpen(false);
 
   const menuItems = [
-    { name: "PROJECTS", href:"/products"},
+    { name: "PROJECTS", href:"/projects"},
     { name: "STUDIO", href:"/studio"}
     // { name: "NEWS", href:"/news"}
   ];
@@ -44,7 +44,7 @@ const Navbar = () => {
         />
       </div> */}
       <nav
-        className={`fixed w-full px-5 lg:pr-0.5 xl:px-[8%] py-2 flex items-right justify-between z-[100] ${
+        className={`${isHomePage ? "fixed" : "reltive"} w-full px-5 lg:pr-0.5 xl:px-[8%] py-2 flex items-right justify-between z-[100] ${
           isHomePage ?
           isScrolled ? "bg-transparent shadow-md" : "bg-transparent" :
           "bg-white"

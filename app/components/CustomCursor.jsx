@@ -6,6 +6,12 @@ const CustomCursor = () => {
   const followerRef = useRef(null);
 
   useEffect(() => {
+    if(window.innerWidth <= 768 ){
+      if(cursorRef.current) cursorRef.current.style.display ='none';
+      if(followerRef.current) followerRef.current.style.display ='none';
+      return;
+    }
+
     const cursor = cursorRef.current;
     const follower = followerRef.current;
 
@@ -55,6 +61,14 @@ const CustomCursor = () => {
 
     return () => {
       document.removeEventListener('mousemove', moveCursor);
+      document.querySelectorAll('a').forEach((link) => {
+        link.removeEventListener('mouseenter', () => handleLinkHover(true));
+        link.removeEventListener('mouseleave', () => handleLinkHover(false));
+      });
+      document.querySelectorAll('iframe').forEach((iframe) => {
+        iframe.removeEventListener('mouseenter', () => handleIframeHover(true));
+        iframe.removeEventListener('mouseleave', () => handleIframeHover(false));
+      });
     };
   }, []);
 

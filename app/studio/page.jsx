@@ -44,8 +44,8 @@ const Studio = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-12 lg:pt-96 left-2" style={{ backgroundImage: 'url(/studio_bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <ul className="hidden lg:flex flex-wrap gap-4 font-trebuchet lg:px-16 text-xl">
+    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-12 lg:pt-48 left-4" style={{ backgroundImage: 'url(/studio_bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <ul className="hidden lg:flex flex-wrap gap-4 font-trebuchet lg:px-24 text-xl">
         {aboutLinks.map((item, index) => (
           <li key={index}>
             <Link
@@ -60,7 +60,7 @@ const Studio = () => {
 
       <main className="lg:mx-[2%] px-8 ">
         {/* STUDIO SECTION */}
-        <section id="studio" className="py-16 scroll-mt-32 shadow-xl bg-[white] bg-opacity-90 rounded-xl px-6">
+        <section id="studio" className="py-16 scroll-mt-32 shadow-xl bg-[white] bg-opacity-90 rounded-xl px-6 mt-8">
           <h1 className="text-[52px] font-bold mb-6 text-aGreen">STUDIO</h1>
           <p className="text-[20px] leading-[30px] max-w-7.5xl text-justify">
             Artemis Atelier Limited is one of Nigeria's leading architectural
@@ -84,14 +84,15 @@ const Studio = () => {
             dedication to quality and our passion for reshaping the Nigerian
             architectural landscape. We have served many individuals and firms in our capacity as contractors, designers, suppliers and facility managers. The management team converge with years of experience working together on projects for banks, merchants and individuals.
           </p>
-          <h2 className="text-bold text-2xl mt-8 mb-4">
+          <h2 className="text-bold text-2xl mt-8 mb-4 px-12">
             <span className="text-aGreen">Our
-            Vision, Mission & Core Values</span>
+            Vision, Mission & Core Values</span></h2>
+            <div className="flex flex-row gap-4 px-12">
             <li>Creativity & Innovation</li>
             <li>Commitment</li>
             <li>Customer Satisfaction</li>
             <li>Quality & Safety</li>
-          </h2>
+            </div>
         </section>
 
         <section className="py-16 scroll-mt-24 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-2">
