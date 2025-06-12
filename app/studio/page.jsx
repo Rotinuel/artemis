@@ -84,14 +84,14 @@ const Studio = () => {
             dedication to quality and our passion for reshaping the Nigerian
             architectural landscape. We have served many individuals and firms in our capacity as contractors, designers, suppliers and facility managers. The management team converge with years of experience working together on projects for banks, merchants and individuals.
           </p>
-          <h2 className="text-bold text-2xl mt-8 mb-4 px-12">
+          <h2 className="text-bold text-2xl mt-8 mb-4 px-2 md:px-4">
             <span className="text-aGreen">Our
             Vision, Mission & Core Values</span></h2>
-            <div className="flex flex-row gap-4 px-12">
-            <li>Creativity & Innovation</li>
-            <li>Commitment</li>
-            <li>Customer Satisfaction</li>
-            <li>Quality & Safety</li>
+            <div className="flex flex-col gap-4 px-4 md:px-12.">
+            <p>Creativity & Innovation</p>
+            <p>Commitment</p>
+            <p>Customer Satisfaction</p>
+            <p>Quality & Safety</p>
             </div>
         </section>
 
@@ -110,7 +110,7 @@ const Studio = () => {
               <div key={index} className="px-6 py-2 text-center">
                 <Image
                   src={item.image}
-                  alt={item.name}
+                  // alt={item.name}
                   width={60}
                   height={60}
                   className="mx-auto rounded-full object-cover mb-2"
@@ -139,7 +139,7 @@ const Studio = () => {
                 <div className="w-32 h-32 mx-auto relative overflow-hidden rounded-full border-4 border-gray-200 mb-4">
                   <Image
                     src={person.image}
-                    alt={person.name}
+                    // alt={person.name}
                     fill
                     className="object-cover"
                   />

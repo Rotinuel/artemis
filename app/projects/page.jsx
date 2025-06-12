@@ -17,9 +17,19 @@ const products = () => {
 
   const cards = [
     {
+      image: "/2.png",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/23.png",
+      title: "",
+      description: "",
+    },
+    {
       image: "/011.png",
-      title: "Card One",
-      description: "This is the description for card one.",
+      title: "",
+      description: "",
     },
     {
       image: "/012.png",
@@ -42,17 +52,87 @@ const products = () => {
       description: "This is the description for card two.",
     },
     {
-        image: "/016.png",
+      image: "/016.png",
       title: "Card Three",
       description: "This is the description for card three.",
     },
     {
-      title: "Card Four",
-      description: "This is the description for card four.",
+      image: "/017.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/018.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/019.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/020.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/021.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/022.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/023.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/024.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/025.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/026.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
     },
     {
-      title: "Card Five",
-      description: "This is the description for card five.",
+      image: "/027.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/028.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/029.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/030.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/031.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/032.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/033.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/034.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
+    },{
+      image: "/035.png",
+      title: "Card Three",
+      description: "This is the description for card three.",
     },
   ];
 
