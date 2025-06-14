@@ -95,7 +95,7 @@ const Studio = () => {
             </div>
         </section>
 
-        <section className="py-16 scroll-mt-4 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-2">
+        <section className="py-16 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-2">
           {/* <h1 className="text-[52px] font-bold mb-6 text-aGreen text-left">FAMOUS ARCHITECTS</h1> */}
           <Carousel
             showArrows={true}

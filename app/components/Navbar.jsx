@@ -70,7 +70,7 @@ const Navbar = () => {
           ))}
         </ul>
         <button className="block lg:hidden ml-3" onClick={openMenu}>
-          <Image src={assets.menu_black} alt="" className="w-6" />
+          <Image src={assets.bars} alt="" className="w-6" />
         </button>
         {menuOpen && (
           <div
@@ -86,7 +86,7 @@ const Navbar = () => {
         >
           <div className="top-4 flex justify-end" onClick={closeMenu}>
             <Image
-              src={assets.close_white}
+              src={assets.x}
               alt=""
               className="w-8 cursor-pointer"
             />

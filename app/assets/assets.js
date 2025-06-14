@@ -1,6 +1,8 @@
 // import user_image from './user-image.png';
 // import code_icon from './code-icon.png';
 import bg from './bg.png';
+import bars from './bars-solid.svg';
+import x from './xmark-solid.svg';
 // import code_icon_dark from './code-icon-dark.png';
 // import edu_icon from './edu-icon.png';
 // import edu_icon_dark from './edu-icon-dark.png';
@@ -56,6 +58,8 @@ export const assets = {
     // right_arrow_white,
     // logo,
     logobg,
+    bars,
+    x,
     // logo_dark,
     // mail_icon,
     // mail_icon_dark,
