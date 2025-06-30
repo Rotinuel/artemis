@@ -13,8 +13,8 @@ const Footer = () => {
             <span className="block">70b Olorunlogbon St, Anthony,</span>
             <span className="block">Ikeja 105102, Lagos, Nigeria</span>
             <span className="block pt-4">studio +234 80 3350 2393</span>
-            <span className="block">mail(at)artemisatelierltd.co </span>
-            <span className="block pt-4">office(at)artemisatelier.co</span>
+            <span className="block">mail@artemisatelierltd.co </span>
+            <span className="block pt-4">office@artemisatelier.co</span>
             <span className="block">VAT Nr. IT02677200210</span>
             <span className="block pt-4"><button className="underline" download>Download the vCard</button></span>
             <span className="block">or <button className="underline">Scan QR-Code</button></span>
@@ -23,11 +23,11 @@ const Footer = () => {
         <div className="">
         <div className="text-md pt-10 lg:p-6">
             <span className="block">PRESS AREA</span>
-            <span className="pt-4 block">studio(at)artemisatelierltd.co</span>
+            <span className="pt-4 block">studio@artemisatelierltd.co</span>
         </div>
         <div className="text-md pt-10 lg:p-6">
             <span className="block">JOBS APPLICATION</span>
-            <span className="pt-4 block">jobs(at)artemisatelierltd.co</span>
+            <span className="pt-4 block">jobs@artemisatelierltd.co</span>
         </div>
         </div>
         <div className="text-md pt-10 lg:p-6">

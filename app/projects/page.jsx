@@ -142,7 +142,7 @@ const products = () => {
         href="/"
         className="block mb-4 text-xl font-bold hover:text-aGreen pt-2"
       >
-        all
+        ALL
       </Link>
       <ul className="hidden lg:flex flex-wrap gap-4 font-trebuchet">
         {productsLinks.map((item, index) => (
@@ -184,7 +184,7 @@ const products = () => {
       </div> */}
 
 <div className="py-2">
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
     {cards.map((card, index) => (
       <div
         key={index}

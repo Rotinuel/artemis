@@ -4,6 +4,10 @@ import { assets } from "../assets/assets";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+import ParticlesComponent from "./particles";
+
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,6 +23,7 @@ const Navbar = () => {
     { name: "STUDIO", href:"/studio"}
     // { name: "NEWS", href:"/news"}
   ];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -84,6 +89,7 @@ const Navbar = () => {
           className={`fixed top-0 bottom-0 right-0 w-72 z-50 h-screen bg-[#000] text-[#fff] flex flex-col gap-4 py-10 px-10 transition-transform duration-500 font-normal text-[52px] leading-[58px] overflow-x-hidden
                     ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
         >
+          <ParticlesComponent />
           <div className="top-4 flex justify-end" onClick={closeMenu}>
             <Image
               src={assets.x}
