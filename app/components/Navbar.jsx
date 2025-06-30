@@ -27,17 +27,11 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
 
   return (
     <>
@@ -78,18 +72,22 @@ const Navbar = () => {
           <Image src={assets.bars} alt="" className="w-6" />
         </button>
         {menuOpen && (
+          <>
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-500"
-            onClick={closeMenu}
+          className="fixed inset-0 bg-black bg-opacity-30 z-40 transition-opacity duration-500"
+          onClick={closeMenu}
           />
+          <div className="fixed inset-0 z-45">
+          <ParticlesComponent id="particles" />
+          </div>
+          </>
         )}
 
         {/* mobile menu */}
         <ul
-          className={`fixed top-0 bottom-0 right-0 w-72 z-50 h-screen bg-[#000] text-[#fff] flex flex-col gap-4 py-10 px-10 transition-transform duration-500 font-normal text-[52px] leading-[58px] overflow-x-hidden
+          className={`fixed top-0 bottom-0 right-0 w-72 z-50 h-screen text-[#fff] flex flex-col gap-4 py-10 px-10 transition-transform duration-500 font-normal text-[52px] leading-[58px] overflow-x-hidden
                     ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
         >
-          <ParticlesComponent id="particles"/>
           <div className="top-4 flex justify-end" onClick={closeMenu}>
             <Image
               src={assets.x}
