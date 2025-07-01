@@ -45,13 +45,12 @@ const Studio = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-8 lg:pt-20" style={{ backgroundImage: 'url(/studio_bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="relative z-0 w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black font-trebuchet pt-8 lg:pt-20">
-  <div className="fixed inset-0 z-10">
+    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-8 lg:pt-20 z-10">
+      {/* <div className="relative z-0 w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black font-trebuchet pt-8 lg:pt-20"> */}
+{/* </div> */}
+  <div className="fixed inset-0 -z-10">
     <ParticlesComponent id="particles" color="#1bbb9f" number={20} interactive={false} />
   </div>
-  ...
-</div>
 
       {/* <div className="fixed inset-0 -z-10">
           <ParticlesComponent id="particles" color="#1bbb9f" number={20} interactive={false}/>
