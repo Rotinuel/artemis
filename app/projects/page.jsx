@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ParticlesComponent from "@/app/components/particles";
 
 const products = () => {
   const productsLinks = [
@@ -138,6 +139,9 @@ const products = () => {
 
   return (
     <div className="w-full overflow-hidden bg-white min-h-screen text-black relative z-[1] p-12 font-trebuchet pt-24">
+       <div className="fixed inset-0 -z-10">
+          <ParticlesComponent id="particles" color="#1bbb9f" number={20} interactive={false}/>
+          </div>
       <Link
         href="/"
         className="block mb-4 text-xl font-bold hover:text-aGreen pt-2"

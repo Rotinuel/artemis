@@ -6,6 +6,7 @@ import Image from "next/image";
 // import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import ParticlesComponent from "@/app/components/particles";
 
 const Studio = () => {
   const aboutLinks = [
@@ -45,6 +46,16 @@ const Studio = () => {
 
   return (
     <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-8 lg:pt-20" style={{ backgroundImage: 'url(/studio_bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="relative z-0 w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black font-trebuchet pt-8 lg:pt-20">
+  <div className="fixed inset-0 z-10">
+    <ParticlesComponent id="particles" color="#1bbb9f" number={20} interactive={false} />
+  </div>
+  ...
+</div>
+
+      {/* <div className="fixed inset-0 -z-10">
+          <ParticlesComponent id="particles" color="#1bbb9f" number={20} interactive={false}/>
+          </div> */}
       <ul className="hidden lg:flex flex-wrap gap-4 font-trebuchet lg:px-24 text-xl">
         {aboutLinks.map((item, index) => (
           <li key={index}>
