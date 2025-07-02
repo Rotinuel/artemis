@@ -56,7 +56,7 @@ const Navbar = () => {
             className="w-14 lg:w-28 cursor-pointer"
           />
         </Link>
-        <ul className="hidden flex-col lg:flex gap-4 lg:gap-2 px-2 py-12 justify-end font-normal text-[52px] leading-[50px] text-black font-trebuchet">
+        <ul className="hidden flex-col lg:flex gap-4 lg:gap-2 px-2 py-12 justify-end font-normal text-[52px] leading-[50px] text-black font-bauhaus">
           {menuItems.map((item, index) => (
             <li key={index} className="relative group">
               <Link
@@ -95,7 +95,7 @@ const Navbar = () => {
               className="w-8 cursor-pointer"
             />
           </div>
-          <div className="font-trebuchet">
+          <div className="font-bauhaus">
             {menuItems.map((item, index) => (
               <li key={index} className="flex justify-end">
               <Link

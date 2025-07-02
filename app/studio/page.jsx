@@ -106,7 +106,7 @@ const Studio = () => {
             </div>
         </section>
 
-        <section className="py-16 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-2">
+        <section className="py-8 shadow-xl bg-white bg-opacity-90 rounded-xl px-6 mt-2">
           {/* <h1 className="text-[52px] font-bold mb-6 text-aGreen text-left">FAMOUS ARCHITECTS</h1> */}
           <Carousel
             showArrows={true}
@@ -122,8 +122,8 @@ const Studio = () => {
                 <Image
                   src={item.image}
                   // alt={item.name}
-                  width={20}
-                  height={20}
+                  width={10}
+                  height={10}
                   className="mx-auto rounded-full object-cover mb-2"
                 />
                 <p className="text-lg italic mb-2">"{item.quote}"</p>
