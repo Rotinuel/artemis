@@ -78,7 +78,7 @@ const Navbar = () => {
           onClick={closeMenu}
           />
           <div className="fixed inset-0 z-45">
-          <ParticlesComponent id="particles" />
+          <ParticlesComponent id="particles" interactive={false}/>
           </div>
           </>
         )}
