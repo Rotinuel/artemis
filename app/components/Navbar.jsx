@@ -43,7 +43,7 @@ const Navbar = () => {
         />
       </div> */}
       <nav
-        className={`${isHomePage ? "fixed" : "reltive"} w-full px-5 lg:pr-0.5 xl:px-[8%] py-2 flex items-right justify-between z-[100] ${
+        className={`${isHomePage ? "fixed" : "relative"} w-full px-5 lg:pr-0.5 xl:px-[8%] py-2 flex items-right justify-between z-[100] ${
           isHomePage ?
           isScrolled ? "bg-transparent shadow-md" : "bg-transparent" :
           "bg-white"
@@ -85,7 +85,7 @@ const Navbar = () => {
 
         {/* mobile menu */}
         <ul
-          className={`fixed top-0 bottom-0 right-0 w-72 z-50 h-screen text-[#fff] flex flex-col gap-4 py-10 px-10 transition-transform duration-500 font-normal text-[52px] leading-[58px] overflow-x-hidden
+          className={`fixed top-0 bottom-0 right-0 w-72 z-[100] h-screen text-[#fff] flex flex-col gap-4 py-10 px-10 transition-transform duration-500 font-normal text-[52px] leading-[58px] overflow-x-hidden
                     ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
         >
           <div className="top-4 flex justify-end" onClick={closeMenu}>

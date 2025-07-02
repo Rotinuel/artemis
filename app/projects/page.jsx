@@ -138,7 +138,7 @@ const products = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-white min-h-screen text-black relative z-[1] p-12 font-trebuchet pt-24">
+    <div className="w-full overflow-hidden bg-white min-h-screen text-black relative z-[1] p-12 font-baumans pt-24">
        <div className="fixed inset-0 -z-10">
           <ParticlesComponent id="particles" color="#1bbb9f" number={20} interactive={false}/>
           </div>
@@ -150,10 +150,10 @@ const products = () => {
       </Link>
       <ul className="hidden lg:flex flex-wrap gap-4 font-trebuchet">
         {productsLinks.map((item, index) => (
-          <li key={index} className="font-trebuchet hover:text-aGreen">
+          <li key={index} className="font-garamond hover:text-aGreen">
             <Link
               href={item.href}
-              className="gap-4 leading-[30px] text-[24px] font-[700px] font-trebuchet hover:text-aGreen"
+              className="gap-4 leading-[30px] text-[24px] font-[700px] font-baumans hover:text-aGreen"
             >
               {item.name}
             </Link>
