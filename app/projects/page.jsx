@@ -5,137 +5,161 @@ import ParticlesComponent from "@/app/components/particles";
 
 const products = () => {
   const productsLinks = [
-    { name: "hotel-restaurant //", href: "/products" },
-    { name: "living //", href: "/products" },
-    { name: "residential complexes //", href: "/products" },
-    { name: "headquarters //", href: "/products" },
-    { name: "retail //", href: "/products" },
-    { name: "healthcare //", href: "/products" },
-    { name: "exhibition stands //", href: "/products" },
-    { name: "infrastructure - public spaces //", href: "/products" },
-    { name: "urbanism //", href: "/products" },
+    { name: "hotel-restaurant //", href: "/projects" },
+    { name: "living //", href: "/projectts" },
+    { name: "residential complexes //", href: "/projects" },
+    { name: "headquarters //", href: "/projects" },
+    { name: "retail //", href: "/projects" },
+    { name: "healthcare //", href: "/projects" },
+    { name: "exhibition stands //", href: "/projects" },
+    { name: "infrastructure - public spaces //", href: "/projects" },
+    { name: "urbanism //", href: "/projects" },
   ];
 
   const cards = [
     {
-      image: "/2.png",
+      image: "/finished/12.jpg",
       title: "",
       description: "",
     },
     {
-      image: "/23.png",
+      image: "/finished/13.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/14.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/15.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/16.jpg",
       title: "",
       description: "",
     },
     {
-      image: "/011.png",
+      image: "/finished/17.jpg",
       title: "",
       description: "",
     },
     {
-      image: "/012.png",
-      title: "Card Two",
-      description: "This is the description for card two.",
+      image: "/finished/18.jpg",
+      title: "",
+      description: "",
     },
     {
-      image: "/013.png",
-      title: "Card Two",
-      description: "This is the description for card two.",
+      image: "/finished/19.jpg",
+      title: "",
+      description: "",
     },
     {
-      image: "/014.png",
-      title: "Card Two",
-      description: "This is the description for card two.",
+      image: "/finished/1.jpg",
+      title: "",
+      description: "",
     },
     {
-      image: "/015.png",
-      title: "Card Two",
-      description: "This is the description for card two.",
+      image: "/finished/2.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/3.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/4.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/5.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/6.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/7.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/8.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/9.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/10.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/010.jpg",
+      title: "",
+      description: "",
     },
-    {
-      image: "/016.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },
-    {
-      image: "/017.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/018.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/019.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/020.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/021.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/022.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/023.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/024.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/025.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/026.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },
-    {
-      image: "/027.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/028.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/029.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/030.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/031.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/032.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/033.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/034.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },{
-      image: "/035.png",
-      title: "Card Three",
-      description: "This is the description for card three.",
-    },
+    
   ];
+
+  const cards2 = [
+    {
+      image: "/ongoing/1.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/2.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/3.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/4.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/5.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/6.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/7.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/8.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/9.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/10.jpg",
+      title: "",
+      description: "",
+    },
+    {
+      image: "/ongoing/11.jpg",
+      title: "",
+      description: "",
+    },
+  ]
 
   return (
     <div className="w-full overflow-hidden bg-white min-h-screen text-black relative z-[1] p-12 font-baumans pt-24">
@@ -188,6 +212,7 @@ const products = () => {
       </div> */}
 
 <div className="py-2">
+  <p className="text-xl text-aGreen py-2">Finished Projects</p>
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
     {cards.map((card, index) => (
       <div
@@ -205,13 +230,40 @@ const products = () => {
             />
           )}
         </div>
-        <div className="p-6">
+        {/* <div className="p-6">
           <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
           <p>{card.description}</p>
-        </div>
+        </div> */}
       </div>
     ))}
   </div>
+
+  <p className="text-xl text-aGreen py-2">Ongoing Projects</p>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+    {cards2.map((card, index) => (
+      <div
+        key={index}
+        className="group rounded-2xl bg-white shadow-md p-6 transition-all duration-300 transform hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1 text-black overflow-hidden"
+      >
+        <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 overflow-hidden rounded-xl">
+          {card.image && (
+            <Image
+              src={card.image}
+              alt={card.title}
+              fill
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          )}
+        </div>
+        {/* <div className="p-6">
+          <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
+          <p>{card.description}</p>
+        </div> */}
+      </div>
+    ))}
+  </div>
+
 </div>
 
     </div>
