@@ -73,7 +73,7 @@ const Studio = () => {
         {/* STUDIO SECTION */}
         <section id="studio" className="py-16 scroll-mt-32 shadow-xl bg-[white] bg-opacity-90 rounded-xl px-6 mt-8">
           <h1 className="text-[52px] font-bold mb-6 text-aGreen">STUDIO</h1>
-          <p className="text-[20px] leading-[30px] max-w-7.5xl text-justify break-words">
+          <p className="text-[20px] leading-[30px] max-w-7.5xl text-justify break-words hyphens-auto">
             Artemis Atelier Limited is one of Nigeria's leading architectural
             and construction companies, headquartered in Lagos. Established by
             Mr. C. E. Makama in 2010, the company was founded with a clear
