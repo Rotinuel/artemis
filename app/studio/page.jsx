@@ -16,46 +16,47 @@ const Studio = () => {
   ];
 
   const peopleLinks = [
-    { name: "C.E MAKAMA", title: "Managing Director", image: "/team/makama.jpg" },
-    { name: "E.M MAKAMA", title: "Admin Manager", image: "/team/em_makama.jpg" },
-    { name: "CHIEF P.O MICHAEL", title: "Operations", image: "/team/michael.jpg" },
-    { name: "O.IBIAM", title: "Financial Director", image: "/team/ibiam.jpg" },
-    { name: "B.BUSARI", title: "Operations Manager", image: "/team/busari.jpg" },
-    { name: "A.O OWOYOMI", title: "H.R Manager", image: "/team/owoyomi.jpg" },
-    { name: "IBUKUN JEGEDE PHD", title: "Chairman of the Advisory Board", image: "/team/jegede.jpg" },
-    { name: "TOBI AWOJOBI", title: "BIM Coordinator", image: "/team/awojobi.jpg" },
+    { name: "C.E MAKAMA", title: "Managing Director", image: "/circle.svg" },
+    { name: "E.M MAKAMA", title: "Admin Manager", image: "/circle.svg" },
+    { name: "CHIEF P.O MICHAEL", title: "Operations", image: "/circle.svg" },
+    { name: "O.IBIAM", title: "Financial Director", image: "/circle.svg" },
+    { name: "B.BUSARI", title: "Operations Manager", image: "/circle.svg" },
+    { name: "A.O OWOYOMI", title: "H.R Manager", image: "/circle.svg" },
+    { name: "IBUKUN JEGEDE PHD", title: "Chairman of the Advisory Board", image: "/circle.svg" },
+    { name: "TOBI AWOJOBI", title: "BIM Coordinator", image: "/circle.svg" },
+    { name: "Emmanuel Okhuarobo", title: "Digital Consultant", image: "/circle.svg" },
   ];
 
   const architectQuotes = [
     {
-      image: "/architects/frank_lloyd_wright.jpg",
+      image: "/op.webp",
       quote: "The mother art is architecture. Without an architecture of our own we have no soul of our own civilization.",
       name: "Frank Lloyd Wright"
     },
     {
-      image: "/architects/zaha_hadid.jpg",
+      image: "/zh.jpg",
       quote: "There are 360 degrees, so why stick to one?",
       name: "Zaha Hadid"
     },
     {
-      image: "/architects/le_corbusier.jpg",
+      image: "/le.jpg",
       quote: "Architecture is the learned game, correct and magnificent, of forms assembled in the light.",
       name: "Le Corbusier"
     }
   ];
 
   return (
-    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-trebuchet pt-8 lg:pt-20 z-10">
-      {/* <div className="relative z-0 w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black font-trebuchet pt-8 lg:pt-20"> */}
+    <div className="w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black relative font-bauhaus pt-8 lg:pt-20 z-[1]">
+      {/* <div className="relative z-0 w-full overflow-hidden min-h-screen scroll-smooth bg-white text-black font-bauhaus pt-8 lg:pt-20"> */}
 {/* </div> */}
-  <div className="fixed inset-0 -z-10">
+  <div className="fixed inset-0 -z-20">
     <ParticlesComponent id="particles" color="#1bbb9f" number={20} interactive={false} />
   </div>
 
       {/* <div className="fixed inset-0 -z-10">
           <ParticlesComponent id="particles" color="#1bbb9f" number={20} interactive={false}/>
           </div> */}
-      <ul className="hidden lg:flex flex-wrap gap-4 font-trebuchet lg:px-24 text-xl">
+      <ul className="hidden lg:flex flex-wrap gap-4 font-bauhaus lg:px-24 text-xl">
         {aboutLinks.map((item, index) => (
           <li key={index}>
             <Link
@@ -121,8 +122,8 @@ const Studio = () => {
                 <Image
                   src={item.image}
                   // alt={item.name}
-                  width={60}
-                  height={60}
+                  width={20}
+                  height={20}
                   className="mx-auto rounded-full object-cover mb-2"
                 />
                 <p className="text-lg italic mb-2">"{item.quote}"</p>
