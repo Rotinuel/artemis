@@ -358,6 +358,23 @@ const products = () => {
       title: "",
       description: "",
     }
+    ,{
+      image: "/finished/75.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/76.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/77.jpg",
+      title: "",
+      description: "",
+    },{
+      image: "/finished/78.jpg",
+      title: "",
+      description: "",
+    }
     
   ];
 
