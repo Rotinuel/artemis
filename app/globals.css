@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @theme {
   --color-lightHover: #fcf4ff;
   --color-darkHover: #2a004a;
@@ -14,8 +13,18 @@
   --font-bauhaus: Bauhaus 93, sans-serif;
 }
 
-html{
+html {
   scroll-padding-top: 128px;
 }
 
-
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
