@@ -122,7 +122,7 @@ const Studio = () => {
                 <div className="w-32 h-32 relative mb-4">
                 <Image
                   src={item.image}
-                  {/* alt={item.name} */}
+                  // alt={item.name}
                   fill
                   className="rounded-full object-cover"
                 />
