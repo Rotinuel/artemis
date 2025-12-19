@@ -39,7 +39,7 @@ const Studio = () => {
       name: "Zaha Hadid"
     },
     {
-      image: "/le.jpg",
+      image: "/le.webp",
       quote: "Architecture is the learned game, correct and magnificent, of forms assembled in the light.",
       name: "Le Corbusier"
     }
