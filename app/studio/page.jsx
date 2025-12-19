@@ -118,13 +118,12 @@ const Studio = () => {
             className="max-w-3xl mx-auto"
           >
             {architectQuotes.map((item, index) => (
-              <div key={index} className="px-6 py-2 text-center">
+              <div key={index} className="w-32 h-32 mx-auto relative mb-3">
                 <Image
                   src={item.image}
-                  // alt={item.name}
-                  width={10}
-                  height={10}
-                  className="mx-auto rounded-full object-cover mb-2"
+                  alt={item.name}
+                  fill
+                  className="rounded-full object-cover"
                 />
                 <p className="text-lg italic mb-2">"{item.quote}"</p>
                 <h3 className="font-bold text-aGreen">- {item.name}</h3>
