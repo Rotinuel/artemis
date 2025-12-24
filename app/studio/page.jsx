@@ -22,7 +22,6 @@ const Studio = () => {
     { name: "O.IBIAM", title: "Financial Director", image: "/circle.svg" },
     { name: "B.BUSARI", title: "Operations Manager", image: "/circle.svg" },
     { name: "A.O OWOYOMI", title: "H.R Manager", image: "/circle.svg" },
-    { name: "IBUKUN JEGEDE PHD", title: "Chairman of the Advisory Board", image: "/circle.svg" },
     { name: "TOBI AWOJOBI", title: "BIM Coordinator", image: "/circle.svg" },
     { name: "Emmanuel Okhuarobo", title: "Digital Consultant", image: "/circle.svg" },
   ];
